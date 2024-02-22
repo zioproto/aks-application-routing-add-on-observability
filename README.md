@@ -24,3 +24,11 @@ And point your browser to the URL displayed by this command.
 
 The identity that created the infrastructure with Terraform is configured as Grafana Admin.
 
+### Testing
+
+```
+brew install hey
+hey -n 20000 -host "example.com" http://x.x.x.x.nip.io
+brew install oha
+oha -n 20000 --host "example.com" http://x.x.x.x.nip.io
+```
